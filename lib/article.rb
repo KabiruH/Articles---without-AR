@@ -9,6 +9,8 @@ attr_reader :author, :magazine, :title
         @magazine =magazine
         @title = title
         @@all<< self
+        author.articles << self
+        magazine.articles << self
     end
 
     def title
@@ -20,12 +22,11 @@ attr_reader :author, :magazine, :title
     end
 
     def author
-        @author
+        @author.name
     end
 
     def magazine
-        @magazine
+        @magazine.name
     end
-
 
 end
