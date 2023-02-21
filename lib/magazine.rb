@@ -46,7 +46,7 @@ attr_accessor :name, :category, :articles
         end
     
 
-    author_counts.select {|author| count|count > 2}.keys
+    author_counts.select {|author, count|count > 2}.keys
     end
 
 end

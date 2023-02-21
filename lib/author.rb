@@ -32,7 +32,7 @@ class Author
     end
 
     def topic_areas
-        magazine.map(&:category).uniq
+        magazines.map(&:category).uniq
     end
 
 end
